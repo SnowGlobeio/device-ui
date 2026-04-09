@@ -10,19 +10,19 @@
 constexpr byte keys_cols[] = {44, 47, 17, 15, 13, 41};
 constexpr byte keys_rows[] = {12, 16, 42, 18, 14, 7};
 
-constexpr unsigned char KeyMap[3][sizeof(keys_rows)][sizeof(keys_cols)] = {{{' ', '.', 'm', 'n', 'b', 0x9},   // next
-                                                                            {0x0a, 'l', 'k', 'j', 'h', 0x12}, // down
+constexpr unsigned char KeyMap[3][sizeof(keys_rows)][sizeof(keys_cols)] = {{{' ', '.', '0x0a', 'n', 'b', 0x9},   // next
+                                                                            {'m', 'l', 'k', 'j', 'h', 0x12}, // down
                                                                             {'p', 'o', 'i', 'u', 'y', 0x0b},  // prev
-                                                                            {0x08, 'z', 'x', 'c', 'v', 0x11}, // up
-                                                                            {'a', 's', 'd', 'f', 'g', 0x1b},
-                                                                            {'q', 'w', 'e', 'r', 't', 0x1a}},
+                                                                            {0x08, 'w', 'x', 'c', 'v', 0x11}, // up
+                                                                            {'q', 's', 'd', 'f', 'g', 0x1b},
+                                                                            {'a', 'z', 'e', 'r', 't', 0x1a}},
                                                                            {                                  // SHIFT
-                                                                            {'_', ',', 'M', 'N', 'B', 0x03},  // end
-                                                                            {0x0d, 'L', 'K', 'J', 'H', 0x14}, // left
+                                                                            {'_', ',', '0x0d', 'N', 'B', 0x03},  // end
+                                                                            {'M', 'L', 'K', 'J', 'H', 0x14}, // left
                                                                             {'P', 'O', 'I', 'U', 'Y', 0x02},  // home
-                                                                            {0x7f, 'Z', 'X', 'C', 'V', 0x13}, // right
-                                                                            {'A', 'S', 'D', 'F', 'G', 0x09},
-                                                                            {'Q', 'W', 'E', 'R', 'T', 0x1a}},
+                                                                            {0x7f, 'W', 'X', 'C', 'V', 0x13}, // right
+                                                                            {'Q', 'S', 'D', 'F', 'G', 0x09},
+                                                                            {'A', 'S', 'E', 'R', 'T', 0x1a}},
                                                                            {// SHIFT-SHIFT
                                                                             {':', ';', '>', '<', '"', '{'},
                                                                             {'~', '-', '*', '&', '+', '['},
